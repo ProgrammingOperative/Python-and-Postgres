@@ -52,9 +52,9 @@ This is a collection of information on PostgreSQL that I tend to use most often.
 
 #### Creating user and database and grant access to created user
 
-CREATE DATABASE yourdbname;
-CREATE USER youruser WITH ENCRYPTED PASSWORD 'yourpass';
-GRANT ALL PRIVILEGES ON DATABASE yourdbname TO youruser;
+`CREATE DATABASE yourdbname;`
+`CREATE USER youruser WITH ENCRYPTED PASSWORD 'yourpass';`
+`GRANT ALL PRIVILEGES ON DATABASE yourdbname TO youruser;`
 
 ### Common Commands
 
