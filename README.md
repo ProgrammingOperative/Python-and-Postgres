@@ -5,10 +5,10 @@ Convenience PostgreSQL Cheatsheet
 This is a collection of information on PostgreSQL that I tend to use most often.
 
 ## TOC
-- [Login to the postgresql Options](#login Options)  
+- [Login to the postgresql Options](#login-Options)  
 - [ADMINISTRATION](#ADMINISTRATION)
-- [Creating user, database and adding access on PostgreSQL](#Create DB and Attach User)
-- [Common Commands](#common Commands)
+- [Create User, DataBase and Attach permission to this user](#Creating-user-and-database-and-grant-access-to-created-user)
+- [Common Commands](#Common-Commands)
 
 ### Login to the postgresql Options
 - Directly accessing the psql using the default superuser postgres
@@ -24,33 +24,33 @@ This is a collection of information on PostgreSQL that I tend to use most often.
 
 ### ADMINISTRATION
 - CREATE ROLES
-	#CREATE ROLE role_name;
+	`CREATE ROLE role_name;`
 
 - ALTER ROLE WITH PRIVILEDGES
-	#ALTER ROLE role_name WITH CREATEDB, CREATEROLE, SUPERUSER, CREATEVIEW
+	`ALTER ROLE role_name WITH CREATEDB, CREATEROLE, SUPERUSER, CREATEVIEW`
 
 - GRANT ROLE TO USER
-	#GRANT role_name TO user_name
+	`GRANT role_name TO user_name`
 
 - REVOKE ROLE FROM USER
-	#REVOKE role_name FROM user_name
+	`REVOKE role_name FROM user_name`
 
 - DROP ROLE 
-	#DROP ROLE role_name;
+	`DROP ROLE role_name;`
 
 - CREATE USER
-	#CREATE USER user_name WITH priviledge_names
+	`CREATE USER user_name WITH priviledge_names`
 
 
 - DROP USER
-	#DROP USER user_name
+	`DROP USER user_name;`
 
 
 - CREATE A DATABASE
-	#CREATE DATABASE 
+	`CREATE DATABASE database_name;`
 
 
-#### Creating user, database and adding access on PostgreSQL
+#### Creating user and database and grant access to created user
 
 CREATE DATABASE yourdbname;
 CREATE USER youruser WITH ENCRYPTED PASSWORD 'yourpass';
