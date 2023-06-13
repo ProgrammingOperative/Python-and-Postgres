@@ -22,6 +22,10 @@ This is a collection of information on PostgreSQL that I tend to use most often.
 - md5: require md5-hashed password
 	`psql -U master -h localhost -p 5433 testdb`
 
+### DATA IMPORT AND EXPORT
+- Creating a dump file from a database
+	`pg_dump -U username -h hostname -p port -t schema_name.table_name -f dump_file.sql database_name`
+
 ### ADMINISTRATION
 - CREATE ROLES
 	`CREATE ROLE role_name;`
@@ -69,4 +73,6 @@ This is a collection of information on PostgreSQL that I tend to use most often.
 - To get information about current connection from the psql command prompt: `\conninfo`
 
 - To change user: `\c - a_new_user`
+
+
 
