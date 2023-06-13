@@ -25,6 +25,9 @@ This is a collection of information on PostgreSQL that I tend to use most often.
 ### DATA IMPORT AND EXPORT
 - Creating a dump file from a database
 	`pg_dump -U username -h hostname -p port -t schema_name.table_name -f dump_file.sql database_name`
+- Restore Postgres Database from dump files - Involves reading from the dump file
+	`\i /home/tito/dumps/banners.sql`
+
 
 ### ADMINISTRATION
 - CREATE ROLES
